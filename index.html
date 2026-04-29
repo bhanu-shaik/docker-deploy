@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Static Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Our Website</h1>
+            <p>Build amazing static websites with HTML, CSS, and JavaScript</p>
+            <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We create beautiful, responsive, and fast-loading static websites that help businesses establish their online presence.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Fast</h3>
+                    <p>Lightning-fast loading times for better user experience</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Responsive</h3>
+                    <p>Works perfectly on all devices and screen sizes</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Secure</h3>
+                    <p>No backend, no databases, completely secure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Web Design</h3>
+                    <p>Beautiful and modern web design tailored to your brand</p>
+                </div>
+                <div class="service-item">
+                    <h3>Development</h3>
+                    <p>Clean, efficient code built with best practices</p>
+                </div>
+                <div class="service-item">
+                    <h3>Optimization</h3>
+                    <p>Performance optimization for faster load times</p>
+                </div>
+                <div class="service-item">
+                    <h3>Support</h3>
+                    <p>Ongoing support and maintenance for your website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
